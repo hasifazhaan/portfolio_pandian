@@ -1,0 +1,58 @@
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://wallpaperaccess.com/full/5651980.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#fff;
+    position: relative;
+
+}
+.Imgdetails{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+
+}
+.card{
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: grid;
+    place-items: center;
+    
+}
+.Imgdetails .card-img-top{
+    margin-top:4%;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+ul li a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    padding: 4px 0;
+    transition: 0.5s;
+    color:#fff;
+  }
+  ul li a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background: #ff7000;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  ul li a:hover {
+    color: #95a5a6;
+  }
+  ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
